@@ -13,24 +13,20 @@ int main()
     cin >> b;
     cout << "Vvedite deistvie:" ;
     cin >> c;
-
+    cout << "Rezultat:";
     if ( c == 1 ){
-        cout << "Rezultat:";
         cout << a+b;
     }
 
     if ( c == 2 ){
-        cout << "Rezultat:";
         cout << a-b;
     }
 
     if ( c == 3 ){
-        cout << "Rezultat:";
         cout << a*b;
     }
 
     if ( c == 4 ){
-        cout << "Rezultat:";
         cout << a/b;
     }
     return 0;
