@@ -4,34 +4,32 @@ using namespace std;
 
 int main()
 {
-    int a = 0;
-    int b = 0;
-    int c = 0;
+    int chislo1 = 0;
+    int chislo2 = 0;
+    int deistvie = 0;
     cout << "Vvedite pervoe chislo:" ;
-    cin >> a;
+    cin >> chislo1;
     cout << "Vvedite vtoroe chislo:" ;
-    cin >> b;
+    cin >> chislo2;
     cout << "Vvedite deistvie:" ;
-    cin >> c;
-
-    if ( c == 1 ){
+    cin >> deistvie;
+    if (deistvie < 5 && deistvie > 0){
         cout << "Rezultat:";
-        cout << a+b;
-    }
+        if ( deistvie == 1 ){
+            cout << chislo1+chislo2;
+        }
 
-    if ( c == 2 ){
-        cout << "Rezultat:";
-        cout << a-b;
-    }
+        if ( deistvie == 2 ){
+            cout << chislo1-chislo2;
+        }
 
-    if ( c == 3 ){
-        cout << "Rezultat:";
-        cout << a*b;
-    }
+        if ( deistvie == 3 ){
+            cout << chislo1*chislo2;
+        }
 
-    if ( c == 4 ){
-        cout << "Rezultat:";
-        cout << a/b;
+        if ( deistvie == 4 ){
+            cout << chislo1/chislo2;
+        }
     }
     return 0;
 }

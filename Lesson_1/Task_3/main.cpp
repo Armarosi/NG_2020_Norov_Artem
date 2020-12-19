@@ -14,7 +14,7 @@ int main()
     cout << "Skolko shishek bylo sobrano:";
     cin >> c;
     int f = b*c;
-    if ( a < f ) {
+    if ( a <= f ) {
         cout << "YES";
     }
     if ( a > f ) {
