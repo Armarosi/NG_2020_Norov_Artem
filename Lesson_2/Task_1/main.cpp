@@ -17,8 +17,6 @@ int main()
             cout << "ya znayu etu shkolu!";
             break;
         }
-        if (i + 1 >= 10)
-            break;
     }
     return (0);
 }
