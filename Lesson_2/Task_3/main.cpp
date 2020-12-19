@@ -1,17 +1,23 @@
 #include <iostream>
-#include <conio.h>
 
 using namespace std;
 
 int main()
 {
-    int chisla[20];
-
-    for (int i = 0; i<20; i++){
-        cout << "Enter number:";
-        cin >> chisla[i];
-        if (getch() !=0){
-            break;
-        }
+    int a = 0;
+    int b = 0;
+    int c = 0;
+    cout << "Skolko oreshkov nuzhno belochke:";
+    cin >> a;
+    cout << "Skolko oreshkov v odnoy shishke:";
+    cin >> b;
+    cout << "Skolko shishek bylo sobrano:";
+    cin >> c;
+    int f = b*c;
+    if ( a <= f ) {
+        cout << "YES";
+    }
+    if ( a > f ) {
+        cout << "NO";
     }
 }
