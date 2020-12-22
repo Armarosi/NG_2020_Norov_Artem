@@ -15,9 +15,9 @@ int main()
     for (int i=0; i<10; i++){
         if (myschool == shkolu[i]){
             cout << "ya znayu etu shkolu!";
+        }else {
+            cout << "ya ne znayu etu shkolu!";
             break;
         }
     }
-    return (0);
 }
-

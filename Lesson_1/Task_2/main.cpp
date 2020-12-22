@@ -14,22 +14,21 @@ int main()
     cout << "Vvedite deistvie:" ;
     cin >> deistvie;
     if (deistvie < 5 && deistvie > 0){
-        cout << "Rezultat:";
-        if ( deistvie == 1 ){
-            cout << chislo1+chislo2;
+            cout << "Rezultat:";
+            switch( deistvie ){
+                case 1:
+                    cout << chislo1+chislo2;
+                    break;
+                case 2:
+                    cout << chislo1-chislo2;
+                    break;
+                case 3:
+                    cout << chislo1*chislo2;
+                    break;
+                case 4:
+                    cout << chislo1/chislo2;
+                    break;
+            }
         }
-
-        if ( deistvie == 2 ){
-            cout << chislo1-chislo2;
-        }
-
-        if ( deistvie == 3 ){
-            cout << chislo1*chislo2;
-        }
-
-        if ( deistvie == 4 ){
-            cout << chislo1/chislo2;
-        }
-    }
     return 0;
 }
