@@ -8,13 +8,14 @@ int main()
     for (int i = 0; i<20; i++){
         chisla[i] = 0;
     }
+
     for (int i = 0; i<20; i++){
-        cout << "Enter number:";
-        cin >> chisla[i];
-        if (chisla [i] == 0){
-            break;
-        }
+        do{
+            cout << "Enter number:";
+            cin >> chisla[i];
+        }while (chisla [i] == 0);
     }
+
     int maxc = chisla[0];
     for (int i = 0; i<20; i++){
         if(chisla[i] > maxc){

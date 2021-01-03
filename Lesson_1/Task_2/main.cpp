@@ -29,6 +29,6 @@ int main()
                     cout << chislo1/chislo2;
                     break;
             }
-        }
+        }else cout << "Neizvestnoe deistvie";
     return 0;
 }
