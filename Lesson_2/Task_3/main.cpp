@@ -4,34 +4,26 @@ using namespace std;
 
 int main()
 {
-    int chisla[20];
-    for (int i = 0; i<20; i++){
-        chisla[i] = 0;
-    }
+    int maxValue = 0;
+    int stars[5];
+    int maxV_counter = 0;
 
-    for (int i = 0; i<20; i++){
-        do{
-            cout << "Enter number:";
-            cin >> chisla[i];
-        }while (chisla [i] == 0);
-    }
-
-    int maxc = chisla[0];
-    for (int i = 0; i<20; i++){
-        if(chisla[i] > maxc){
-            maxc = chisla[i];
+    for(int counter_input = 0; counter_input < 5; counter_input++){
+        cout << "Enter number in column: ";
+        cin >> stars[counter_input];
+        if (stars[maxV_counter] > maxValue){
+            maxValue = stars[maxV_counter];
         }
     }
-    int space = 0;
-    for (int i = 0; i<20; i++){
-        space = (maxc - chisla[i])/2;
-        while (space>0){
-            cout << " ";
-            space--;
+
+    for(int counter_output = 0; counter_output < maxValue; counter_output++){
+        for(int row = 0; row < 5; row++){
+            if(counter_output < stars[row]){
+                cout << "*";
+            }else{
+                cout << " ";
+            }
         }
-        for (int n = 0; n < chisla[i]; n++)
-            cout << "*";
         cout << endl;
     }
 }
-
