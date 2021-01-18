@@ -13,23 +13,22 @@ int main()
     cin >> chislo2;
     cout << "Vvedite deistvie:" ;
     cin >> deistvie;
-            switch( deistvie ){
-                case 1:
-                    cout << "Rezultat:";
-                    cout << chislo1+chislo2;
-                    break;
-                case 2:
-                    cout << "Rezultat:";
-                    cout << chislo1-chislo2;
-                    break;
-                case 3:
-                    cout << "Rezultat:";
-                    cout << chislo1*chislo2;
-                    break;
-                case 4:
-                    cout << "Rezultat:";
-                    cout << chislo1/chislo2;
-                    break;
-            }
+    cout << "Rezultat:";
+    switch( deistvie ){
+        case 1:
+            cout << chislo1+chislo2;
+            break;
+        case 2:
+            cout << chislo1-chislo2;
+            break;
+        case 3:
+            cout << chislo1*chislo2;
+            break;
+        case 4:
+            cout << chislo1/chislo2;
+            break;
+        default:
+            cout << "neizvestnoe deisvie";
+    }
     return 0;
 }
