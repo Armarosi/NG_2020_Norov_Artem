@@ -12,9 +12,8 @@ int main()
     for (int i = 0; i < symbols[i]; i++){
         if(symbols[i] >= 'a' && symbols[i] <= 'z'){
             symbols[i] -= 32;
-            cout << symbols[i];
-        }else{
-            cout << symbols[i];
+
         }
+        cout << symbols[i];
     }
 }
